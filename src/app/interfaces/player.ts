@@ -5,7 +5,7 @@ export interface Player {
   position: SquadNumber;
   weight: number;
   height: number;
-  nacionality: Countries;
+  nationality: Countries;
   leftFooted: boolean;
 }
 
