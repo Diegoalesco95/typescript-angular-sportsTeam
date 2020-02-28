@@ -7,6 +7,8 @@ import { AppComponent } from "./app.component";
 import { AngularFireModule } from "@angular/fire";
 import { environment } from "../environments/environment";
 import { AngularFireDatabaseModule } from "@angular/fire/database";
+import { PlayerService } from "./services/player.service";
+import { TeamService } from "./services/team.service";
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +18,7 @@ import { AngularFireDatabaseModule } from "@angular/fire/database";
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule
   ],
-  providers: [],
+  providers: [PlayerService, TeamService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
